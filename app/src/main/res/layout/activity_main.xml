@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <!--Lottie Animation With Link-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lottie Animation With Link"
+        android:textSize="20sp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_url="https://assets4.lottiefiles.com/packages/lf20_lFr2tzEfMo.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <!--Lottie Animation Direct-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lottie Animation Direct"
+        android:textSize="20sp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/duck"/>
+
+    <!--Lottie Animation from Java-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lottie Animation with Java"
+        android:textSize="20sp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationViewId"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+</LinearLayout>
